@@ -1,0 +1,36 @@
+﻿<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+    <PropertyGroup>
+        <ProjectGuid>{0F0B49C7-89EC-42EF-97E3-9D6A9A4E259A}</ProjectGuid>
+    </PropertyGroup>
+    <ItemGroup>
+        <Projects Include="Factorial.cbproj">
+            <Dependencies/>
+        </Projects>
+    </ItemGroup>
+    <ProjectExtensions>
+        <Borland.Personality>Default.Personality.12</Borland.Personality>
+        <Borland.ProjectType/>
+        <BorlandProject>
+            <Default.Personality/>
+        </BorlandProject>
+    </ProjectExtensions>
+    <Target Name="Factorial">
+        <MSBuild Projects="Factorial.cbproj"/>
+    </Target>
+    <Target Name="Factorial:Clean">
+        <MSBuild Projects="Factorial.cbproj" Targets="Clean"/>
+    </Target>
+    <Target Name="Factorial:Make">
+        <MSBuild Projects="Factorial.cbproj" Targets="Make"/>
+    </Target>
+    <Target Name="Build">
+        <CallTarget Targets="Factorial"/>
+    </Target>
+    <Target Name="Clean">
+        <CallTarget Targets="Factorial:Clean"/>
+    </Target>
+    <Target Name="Make">
+        <CallTarget Targets="Factorial:Make"/>
+    </Target>
+    <Import Project="$(BDS)\Bin\CodeGear.Group.Targets" Condition="Exists('$(BDS)\Bin\CodeGear.Group.Targets')"/>
+</Project>
