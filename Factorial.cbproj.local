@@ -1,13 +1,13 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <BorlandProject>
 	<Transactions>
-    <Transaction>1899.12.30 00:00:00.000.061,=D:\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.136,D:\Factorial.cbproj=D:\Project1.cbproj</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.391,D:\lab3.dfm=D:\Unit1.dfm</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.391,D:\lab3.h=D:\Unit1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.119,D:\lab3\Project1PCH1.h=D:\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.136,D:\Project1.cbproj=D:\Factorial.cbproj</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.391,D:\Unit1.cpp=D:\lab3.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.391,D:\Unit1.dfm=D:\lab3.dfm</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.131,D:\lab3\Project1PCH1.h=D:\FactorialPCH1.h</Transaction>
     <Transaction>1899.12.30 00:00:00.000.019,=D:\Project1PCH1.h</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.391,D:\lab3.cpp=D:\Unit1.cpp</Transaction>
-    <Transaction>1899.12.30 00:00:00.000.131,D:\FactorialPCH1.h=D:\lab3\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.119,D:\Project1PCH1.h=D:\lab3\Project1PCH1.h</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.061,=D:\Unit1.cpp</Transaction>
+    <Transaction>1899.12.30 00:00:00.000.391,D:\Unit1.h=D:\lab3.h</Transaction>
   </Transactions>
 </BorlandProject>
