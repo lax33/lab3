@@ -12,7 +12,7 @@
 #pragma resource "*.dfm"
 TForm1 *Form1;
 
-double fact, rez, x ;
+double fact, rez, x, a, b, h ;
 int k, i, j ;
 //---------------------------------------------------------------------------
 __fastcall TForm1::TForm1(TComponent* Owner)
@@ -20,6 +20,9 @@ __fastcall TForm1::TForm1(TComponent* Owner)
 {
 	Memo1->Clear();
 	Edit1->Clear();
+	Edit2->Clear();
+	Edit3->Clear();
+	Edit4->Clear();
 }
 
 
@@ -30,20 +33,23 @@ void __fastcall TForm1::Button1Click(TObject *Sender)
 	fact = 1;
 	rez = 1;
 
-	for (i = 1; i <= k; i++)
+	for(x=a; x<=b; x+h )
 	{
-		for (j = 1; j <= k*2; j++)
+
+		for (i = 1; i <= k; i++)
 		{
-			fact =fact * j;
+			for (j = 1; j <= k*2; j++)
+			{
+				fact =fact * j;
+			}
+
+			rez =rez + pow(x, 2*i)/fact;
 		}
 
-		rez =rez + pow(x, 2*i)/fact;
+		Memo1->Lines->Add("При X =" + FloatToStr( x) + "  " +  FloatToStr( rez));
 	}
 
 
 
-
-	Memo1->Clear();
-	Memo1->Lines->Add(FloatToStr( rez));
 }
 //---------------------------------------------------------------------------
